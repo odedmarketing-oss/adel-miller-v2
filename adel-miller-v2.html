@@ -33,7 +33,7 @@
     /* ─── HEADLINE PILL — Dark Frosted Glass ─── */
     .text-line {
       position: fixed;
-      top: 38%;
+      top: 58%;
       left: 50%;
       transform: translateX(-50%);
       width: 82%;
@@ -69,72 +69,62 @@
       opacity: 0;
       animation: slideUp 0.5s ease forwards 0.5s;
     }
-    @media (max-width: 480px) {
-      .cta-container { flex-direction: column; gap: 8px; padding: 16px 16px calc(env(safe-area-inset-bottom, 12px) + 12px); }
-      .btn-primary, .btn-secondary { padding: 14px 20px; font-size: 15px; border-radius: 14px; }
-    }
-
-    /* ─── PRIMARY CTA — Telegram Green (VirtualGF aesthetic) ─── */
-    @keyframes pulse-glow-tg {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-      50% { box-shadow: 0 0 20px 4px rgba(37, 211, 102, 0.35); }
-    }
+    /* ─── PRIMARY CTA — Telegram Blue (VirtualGF exact match) ─── */
     .btn-primary {
+      background: rgb(36, 161, 222);
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+      padding: 16px 32px;
+      border-radius: 16px;
+      border: none;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 8px;
-      background: #25D366;
-      color: #ffffff;
-      font-size: 16px;
-      font-weight: 700;
-      padding: 16px 32px;
-      border-radius: 16px;
-      border: none;
-      cursor: pointer;
       width: 100%;
-      letter-spacing: 0.2px;
+      cursor: pointer;
       text-decoration: none;
+      text-align: center;
       transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-      animation: pulse-glow-tg 2.5s ease-in-out infinite;
     }
     .btn-primary:hover {
-      background: #22c55e;
+      background: rgb(29, 142, 198);
       transform: scale(1.03);
-      box-shadow: 0 0 32px rgba(37, 211, 102, 0.45);
-      animation: none;
+      box-shadow: 0 0 32px rgba(36, 161, 222, 0.45);
     }
 
-    /* ─── SECONDARY CTA — OnlyFans Pink (VirtualGF aesthetic) ─── */
-    @keyframes pulse-glow-of {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(219, 39, 119, 0); }
-      50% { box-shadow: 0 0 20px 4px rgba(219, 39, 119, 0.35); }
-    }
+    /* ─── SECONDARY CTA — Pink (VirtualGF exact match) ─── */
     .btn-secondary {
+      background: rgb(219, 39, 119);
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+      padding: 16px 32px;
+      border-radius: 16px;
+      border: none;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 8px;
-      background: #DB2777;
-      color: #ffffff;
-      font-size: 16px;
-      font-weight: 700;
-      padding: 16px 32px;
-      border-radius: 16px;
-      border: none;
-      cursor: pointer;
       width: 100%;
-      letter-spacing: 0.2px;
+      cursor: pointer;
       text-decoration: none;
+      text-align: center;
       transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-      animation: pulse-glow-of 2.5s ease-in-out infinite;
-      animation-delay: 0.4s;
     }
     .btn-secondary:hover {
-      background: #EC4899;
+      background: rgb(236, 72, 153);
       transform: scale(1.03);
       box-shadow: 0 0 32px rgba(236, 72, 153, 0.45);
-      animation: none;
+    }
+
+    /* ─── MOBILE OVERRIDES ─── */
+    @media (max-width: 480px) {
+      .cta-container { flex-direction: column; gap: 8px; padding: 16px 16px calc(env(safe-area-inset-bottom, 12px) + 12px); }
+      .btn-primary, .btn-secondary { padding: 14px 20px; font-size: 16px; }
     }
 
     /* ─── ANIMATIONS ─── */
